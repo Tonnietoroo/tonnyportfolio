@@ -25,3 +25,34 @@ for (var i = 0; i < btn.length; i++)
  function myConfirm(){
     alert("Working on It!")
  }
+
+/*==============================message================*/
+
+ function message() {
+    var Name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var subject = document.getElementById("subject");
+    var msg = document.getElementById("msg");
+    var success = document.getElementById("success");
+    var danger = document.getElementById("danger");
+
+    if(Name.value === ' ' || email.value === '' || subject.value === '' || msg.value === ''){
+        danger.style.display = 'block';
+    }
+    else{
+        setTimeout(()=>{
+            Name.value = '';
+            email.value = '';
+            subject.value = '';
+            msg.value = '';
+        },2000);
+
+        success.style.display = 'block';
+    }
+
+    setTimeout(()=>{
+        danger.style.display = 'none';
+        success.style.display = 'none';
+    },4000);
+
+ }
