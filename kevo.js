@@ -23,7 +23,7 @@ for (var i = 0; i < btn.length; i++)
 
 /*========================Confirmation Box==========================*/
  function myConfirm(){
-    alert("Working on It!")
+    return confirm("Are you sure you want to download the CV?");
  }
 
 /*==============================message================*/
