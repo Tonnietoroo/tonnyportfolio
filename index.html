@@ -1,548 +1,919 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Toroitich K Tonny">
-    <meta name="description" content="Toroitich Kipchirchir Tonny, University of Kabianga, Computer Science Department, Undergraduate.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!----------CSS files----------->
-    <link rel="stylesheet" href="kevo.css">
-  
-    <!--------======Style Switcher=======----------->                 
-    <link rel="stylesheet" href="skins/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="skins/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="skins/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="skins/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="skins/color-5.css" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="switcher.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <!-- Primary SEO -->
+  <title>Tonny Kipchirchir Toroitich — Full Stack Developer & Digital Solutions Engineer</title>
+  <meta name="description" content="Senior Full Stack Developer, Mobile App Specialist & SEO Expert based in Kenya. Expert in React, Django, Flutter, and modern cloud technologies. Available for projects globally.">
+  <meta name="keywords" content="Full Stack Developer, Software Engineer, Mobile Developer, React, Django, Flutter, SEO Specialist, Kenya Developer, Tonny Toroitich">
+  <meta name="author" content="Tonny Kipchirchir Toroitich">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0a14">
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tonnytoroitich.dev/">
+  <meta property="og:title" content="Tonny Toroitich — Full Stack Developer & Digital Solutions Engineer">
+  <meta property="og:description" content="Senior Full Stack Developer specializing in scalable web applications, mobile development, and digital strategy. Based in Kenya, working globally.">
+  <meta property="og:image" content="https://tonnytoroitich.dev/images/og-image.png">
+  <meta property="og:site_name" content="Tonny Toroitich Portfolio">
 
- 
-    <title>Tonny</title>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@tonnytoroitich">
+  <meta name="twitter:title" content="Tonny Toroitich — Full Stack Developer">
+  <meta name="twitter:description" content="Building scalable digital solutions with React, Django, Flutter, and modern cloud technologies.">
+  <meta name="twitter:image" content="https://tonnytoroitich.dev/images/twitter-card.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://tonnytoroitich.dev/">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tonny Kipchirchir Toroitich",
+    "jobTitle": "Full Stack Developer & Software Engineer",
+    "url": "https://tonnytoroitich.dev",
+    "email": "tonnykip14@gmail.com",
+    "telephone": "+254721473983",
+    "image": "https://tonnytoroitich.dev/img/Tony.JPG",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iten",
+      "addressRegion": "Elgeyo-Marakwet",
+      "addressCountry": "KE"
+    },
+    "sameAs": [
+      "https://github.com/Tonnietoroo",
+      "https://linkedin.com/in/tonnytoroitich",
+      "https://twitter.com/tonnytoroitich"
+    ],
+    "knowsAbout": [
+      "Full Stack Development","React","Django","Flutter","Mobile Development","SEO","Node.js","PostgreSQL","Docker"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Kabianga"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="kevo.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%236366f1'>T</text></svg>">
+
+  <!-- Performance hints -->
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 </head>
-<body >
-    
-<!--------Main container start--------->
-<div class="main-container">
-    <!---------Aside start----------->
-    <div class="aside">
-        <div class="logo">
-            <a href="#"><span>T</span>ony</a>
-        </div>
-        <div class="nav-toggler">
-            <span></span>
-        </div>
-        <ul class="nav">
-            <li><a href="#home" class="active navLink"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#about" class="navLink"><i class="fa fa-user"></i> About</a></li>
-            <li><a href="#services" class="navLink"><i class="fa fa-list"></i> Services</a></li>
-            <li><a href="#portfolio" class="navLink"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-            <li><a href="#contact" class="navLink"><i class="fa fa-comments"></i> Contact</a></li>
+
+<body>
+
+  <!-- ====================================================
+       NAVIGATION
+  ==================================================== -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+
+        <a href="#home" class="nav-logo" aria-label="Tonny Toroitich — home">
+          <img src="img/logo.png" alt="Tonny Toroitich" class="nav-logo-img">
+        </a>
+
+        <ul class="nav-menu" id="navMenu" role="menubar">
+          <li role="none"><a href="#home"       class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="#about"      class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="#skills"     class="nav-link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+          <li role="none"><a href="#projects"   class="nav-link" role="menuitem">Projects</a></li>
+          <li role="none"><a href="#services"   class="nav-link" role="menuitem">Services</a></li>
+          <li role="none"><a href="#contact"    class="nav-link" role="menuitem">Contact</a></li>
         </ul>
-    </div>
-    <!---------Aside end----------->
 
-    <!--------main content start----------->
-    <div class="main-content">
-        <!--------Home section start--------->
-        <section class="home section " id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="home-info padd-15">
-                        <h3 class="hello">Hello my name is <span class="name">Toroitich Tonny</span></h3>
-                        <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
-                        <p>I am a Web developer with an amazing ability to develop websites that are both functional and aesthetiaclly pleasing. I have a strong understanding of web standards and I am passionate about creating websites that user will find easy to use and visually appealing. I am looking for an opportunity to use my skills and experience to make a positive impact on the Web. </p>
-                        <a href="#target" class="btn hire-me">Hire Me</a>
-                    </div>
-                    <div class="home-img">
-                        <img src="img/Tony.JPG" alt="">
-                    </div>
-                </div>
+        <div class="nav-actions">
+          <button class="btn-theme" id="themeToggle" aria-label="Toggle colour theme" title="Toggle theme">
+            <i class="fas fa-moon" id="themeIcon" aria-hidden="true"></i>
+          </button>
+          <a href="#contact" class="btn-nav-cta">Hire Me</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ====================================================
+         HERO SECTION
+    ==================================================== -->
+    <section class="hero" id="home" role="region" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="container hero-container">
+
+        <!-- Left: Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge__dot" aria-hidden="true"></span>
+            <span>Available for new projects</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="hero-title__name">Tonny Kipchirchir</span>
+            <span class="hero-title__role">Full Stack <em>Engineer</em></span>
+          </h1>
+
+          <div class="hero-chips" role="list" aria-label="Specialisations">
+            <span class="chip chip--accent" role="listitem">Full Stack Developer</span>
+            <span class="chip" role="listitem">Mobile Apps</span>
+            <span class="chip" role="listitem">SEO Expert</span>
+            <span class="chip" role="listitem">Digital Architect</span>
+          </div>
+
+          <p class="hero-description">
+            I build <strong>scalable, high-performance digital products</strong> — from enterprise web platforms to cross-platform mobile apps. Currently engineering at <strong>Onfrey Limited</strong>, Iten, Kenya.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn--primary">
+              <span>Start a Project</span>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#projects" class="btn btn--ghost">
+              <i class="fas fa-folder-open" aria-hidden="true"></i>
+              <span>View Work</span>
+            </a>
+          </div>
+
+          <div class="hero-stats" aria-label="Career highlights">
+            <div class="stat-item">
+              <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Built</span>
             </div>
-        </section>
-        <!--------Home section end--------->
-        <!-------About section start--------->
-        <section class="about section" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>About Me</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="about-content padd-15">
-                        <div class="row">
-                            <div class="about-text padd-15">
-                                <h3>I'm Tonny Toroitich and <span>Web Developer</span></h3>
-                                <p>I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done. I am determine and decisive. I identify and develop opportunities.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="personal-info padd-15">
-                                <div class="row">
-                                    <div class="info-item padd-15">
-                                        <p>Birthday : <span>19 Dec 2002</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Age : <span>22</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Website : <span style="font-size: 12px;">tonnyportfolio.vercel.app</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Email : <span style="font-size: 12px;">toroitichtonny06@gmail.com</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Degree : <span>Computer Science</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Phone : <span>0721473983</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>City : <span>Nairobi</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Freelancer : <span>Available</span></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="buttons padd-15">
-                                        <a href="img/TonnyCV.pdf" class="btn" download="Tonny_CV.pdf" onclick="return myConfirm()">Download CV</a>
-                                        <a href="#target" class="btn hire-me">Hire Me</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!----<div class="skills padd-15">
-                                <div class="row">
-                                    <div class="skill-item padd-15">
-                                        <h5>HTML</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 96%;"></div>
-                                            <div class="skill-percent">96%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>CSS</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 86%;"></div>
-                                            <div class="skill-percent">86%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>JS</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 74%;"></div>
-                                            <div class="skill-percent">74%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>Bootstrap</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 65%;"></div>
-                                            <div class="skill-percent">65%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>MYSQL</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 46%;"></div>
-                                            <div class="skill-percent">46%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>---->
-                        <div class="row">
-                            <div class="education padd-15">
-                                <h3 class="title">Education</h3>
-                                <div class="row">
-                                    <div class="timeline-box">
-                                        <div class="timeline shadow-dark">
-                                          
-                                              <!------------TIMELINE ITEM------------->
-                                              <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2021 - 2025
-                                                </h3>
-                                                <h4 class="timeline-title">Degree in Computer Science</h4>
-                                                <p class="timeline-text">Degree of Science in Computer Science</p>
-                                                <p class="timeline-text">University of Kabianga, Kericho</p>
-                                                <p class="timeline-text">Undergraduate</p>
-                                                
-                                            </div>
-                                              <!------------TIMELINE ITEM------------->
-                                              <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2017 - 2020
-                                                </h3>
-                                                <h4 class="timeline-title">High School</h4>
-                                                <p class="timeline-text">Kenya Certificate of Secondary Education</p>
-                                                <p class="timeline-text">Tambach High School, Tambach</p>
-                                                <p class="timeline-text">Grade: B</p>
-
-
-                                                
-                                            </div>
-                                              <!------------TIMELINE ITEM------------->
-                                              <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2008 - 2016
-                                                </h3>
-                                                <h4 class="timeline-title">Primary School</h4>
-                                                <p class="timeline-text">Kenya Certificate of Primary Education</p>
-                                                <p class="timeline-text">Kobil Primary School, Iten</p>
-                                                <p class="timeline-text">Marks: 378</p>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="experience padd-15">
-                                <h3 class="title">Experience</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                        <div class="timeline shadow-dark">
-                                            <!------------TIMELINE ITEM------------->
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2021 - 2022
-                                                </h3>
-                                                <h4 class="timeline-title">HTML/XHTML, CSS</h4>
-                                                <p class="timeline-text">They are the basics of building a Web pages. HTML(the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages.</p>
-
-                                            </div>
-                                              <!------------TIMELINE ITEM------------->
-                                              <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2022 - 2023
-                                                </h3>
-                                                <h4 class="timeline-title">Javascript</h4>
-                                                <p class="timeline-text">Client Side Validation</p>
-                                                <p class="timeline-text">Manipulating HTML Pages</p>
-                                                <p class="timeline-text">Server Application</p>
-                                                
-                                            </div>
-                                              <!------------TIMELINE ITEM------------->
-                                              <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2022 - 2023
-                                                </h3>
-                                                <h4 class="timeline-title">Database Management</h4>
-                                                <p class="timeline-text">Database Programming Languages</p>
-                                                <p class="timeline-text">Database design</p>
-                                                <p class="timeline-text">Data integrity</p>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="4">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Years Experience</span>
             </div>
-        </section>
-        <!-------About section end--------->
-
-        <!-------Services section start--------->
-        <section class="service section" id="services">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Services</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!------SERVICE ITEM START----------->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <h4>Web Design</h4>
-                            <p>Design Websites to be displayed on the internet either Static, Dynamic or eCommerce.</p>
-                        </div>
-                    </div>
-                    <!------SERVICE ITEM END----------->
-                        <!------SERVICE ITEM START----------->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>Web Hosting</h4>
-                                <p>Hosting applications on a computer system either through Cloud, Dedicated or Shared hosting.</p>
-                            </div>
-                        </div>
-                        <!------SERVICE ITEM END----------->
-                            <!------SERVICE ITEM START----------->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-palette"></i>
-                            </div>
-                            <h4>Graphic Design</h4>
-                            <p>Create visual concepts, using computer software or by hand, to communicate ideas that inspire, inform and captivate consumer.</p>
-                        </div>
-                    </div>
-                    <!------SERVICE ITEM END----------->
-                        <!------SERVICE ITEM START----------->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-code"></i>
-                                </div>
-                                <h4>Web Programming</h4>
-                                <p>Writing, Markup and coding involved in Web development which include Web content, Web client and Server scripting.</p>
-                            </div>
-                        </div>
-                        <!------SERVICE ITEM END----------->
-                            <!------SERVICE ITEM START----------->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <h4>Web Optimization</h4>
-                            <p>Optimizing your website to improve search engine traffic and overall user experience through fixing technical SEO errors etc..</p>
-                        </div>
-                    </div>
-                    <!------SERVICE ITEM END----------->
-                        <!------SERVICE ITEM START----------->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-cogs"></i>
-                                </div>
-                                <h4>Website Maintenance</h4>
-                                <p>Through website maintenance can potentially rank your website better, and build a more reliable brand</p>
-                            </div>
-                        </div>
-                        <!------SERVICE ITEM END----------->
-                </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Client Satisfaction</span>
             </div>
-        </section>
-        <!-------Services section end--------->
+          </div>
+        </div>
 
-        <!-------Portfolio section start--------->
-
-        <section class="portfolio section" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Portfolio</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="portfolio-heading">
-                        <h2>My Last Projects :</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-------PORTFOLIO ITEM START-------->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-------PORTFOLIO ITEM END-------->
-                       <!-------PORTFOLIO ITEM START-------->
-                       <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-------PORTFOLIO ITEM END-------->
-                       <!-------PORTFOLIO ITEM START-------->
-                       <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio3.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-------PORTFOLIO ITEM END-------->
-                       <!-------PORTFOLIO ITEM START-------->
-                       <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio4.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-------PORTFOLIO ITEM END-------->
-                       <!-------PORTFOLIO ITEM START-------->
-                       <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio5.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-------PORTFOLIO ITEM END-------->
-                       <!-------PORTFOLIO ITEM START-------->
-                       <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio6.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-------PORTFOLIO ITEM END-------->
-                </div>
+        <!-- Right: Visual Card -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
             </div>
-        </section>
-        <!-------Portfolio section end--------->
-        <!-------Contact section start--------->
-        <section class="contact section" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Contact Me</h2>
-                    </div>                    
+            <div class="hero-card__body">
+              <div class="profile-block">
+                <div class="profile-avatar">T</div>
+                <div class="profile-info">
+                  <strong>Tonny Toroitich</strong>
+                  <span>Software Developer @ Onfrey Ltd</span>
+                  <span class="online-status">
+                    <i class="fas fa-circle"></i> Open to opportunities
+                  </span>
                 </div>
-                <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                <div class="row">
-                    <!---------CONTACT INFO START----------->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <h4>Call Us On</h4>
-                        <p>+254 721473983</p>
-                    </div>
-                     <!---------CONTACT INFO END----------->
-                     <!---------CONTACT INFO START----------->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon">
-                            <i class="fa fa-map-marker-alt"></i>
-                        </div>
-                        <h4>Office</h4>
-                        <p>Eldoret</p>
-                    </div>
-                     <!---------CONTACT INFO END----------->
-                     <!---------CONTACT INFO START----------->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <h4>Email</h4>
-                        <p>toroitichtonny06@gmail.com</p>
-                    </div>
-                     <!---------CONTACT INFO END----------->
-                     <!---------CONTACT INFO START----------->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon">
-                            <i class="fa fa-globe-europe"></i>
-                        </div>
-                        <h4>Website</h4>
-                        <p>www.tonnyportfolio.vercel.app</p>
-                    </div>
-                     <!---------CONTACT INFO END----------->
-
-                </div>
-                <h3 class="contact-title padd-15" id="target">SEND ME AN EMAIL</h3>
-                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                <!----------Contact form--------->
-                <form action="https://formspree.io/f/xnqepjpg" method="POST">
-                <div class="row">
-                        <div class="contact-form padd-15 ">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" id="name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" id="email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input name="subject" type="text" class="form-control" placeholder="Subject" id="subject">
-                                    </div>
-                                </div>
-                            </div>
-                           
-                            <div class="row">
-                                <div class="form-item col -12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="msg" placeholder="Message"></textarea>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                   <button type="submit" id="sendBtn" class="btn" onclick="message()"><!---<a href="mailto: toroitichtonny06@gmail.com" style="color:white ;">Send Message</a> --------> Send Message</button>
-                                </div>
-                            </div>
-                            <div class="messagee padd-15">
-                                <div class="success" id="success">Your Message Successfully Sent!</div>
-                                <div class="danger" id="danger">Fields Can't be Empty</div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </form>
+              </div>
+              <pre class="code-block"><code><span class="code-kw">const</span> <span class="code-fn">tonny</span> = {
+  <span class="code-key">stack</span>: [<span class="code-str">"React"</span>, <span class="code-str">"Django"</span>, <span class="code-str">"Flutter"</span>],
+  <span class="code-key">experience</span>: <span class="code-num">4</span> + <span class="code-str">" years"</span>,
+  <span class="code-key">location</span>: <span class="code-str">"Iten, Kenya 🇰🇪"</span>,
+  <span class="code-fn">build</span>: () =&gt; <span class="code-str">"amazing things ✨"</span>
+};</code></pre>
+              <div class="mini-stack">
+                <span class="mini-tag">React</span>
+                <span class="mini-tag">Django</span>
+                <span class="mini-tag">Flutter</span>
+                <span class="mini-tag">Node.js</span>
+                <span class="mini-tag">PostgreSQL</span>
+                <span class="mini-tag">Docker</span>
+              </div>
             </div>
-        </section>
-        <!-------Contact section end--------->
+          </div>
 
+          <div class="float-badge float-badge--tl">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span>github.com/Tonnietoroo</span>
+          </div>
+          <div class="float-badge float-badge--br">
+            <i class="fas fa-mug-hot" aria-hidden="true"></i>
+            <span>Iten, Kenya 🇰🇪</span>
+          </div>
+        </div>
 
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-indicator__line"></span>
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ====================================================
+         ABOUT SECTION
+    ==================================================== -->
+    <section class="about section" id="about" role="region" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="about-grid">
+
+          <!-- Left: Text -->
+          <div class="about-content reveal">
+            <p class="section-label">About Me</p>
+            <h2 class="section-heading" id="about-heading">Dedicated developer building <em>tomorrow's</em> solutions</h2>
+
+            <p class="about-lead">I'm a results-oriented <strong>Software Developer</strong> with hands-on experience building scalable web and mobile applications. My journey spans full-stack engineering, mobile development, and digital strategy.</p>
+
+            <p class="about-body">I combine strong technical expertise with disciplined project execution, ensuring every system I develop aligns with organizational standards, security principles, and quality outcomes. I thrive in forward-thinking teams where innovation, efficiency, and continuous growth are paramount.</p>
+
+            <div class="about-cards">
+              <div class="about-card reveal reveal--delay-1">
+                <div class="about-card__icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+                <div class="about-card__body">
+                  <h3>Education</h3>
+                  <p>BSc Computer Science</p>
+                  <small>University of Kabianga · 2021–2025<br>Second Class Honours (Upper Division)</small>
+                </div>
+              </div>
+              <div class="about-card reveal reveal--delay-2">
+                <div class="about-card__icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+                <div class="about-card__body">
+                  <h3>Current Role</h3>
+                  <p>Software Developer</p>
+                  <small>Onfrey Limited · May 2025 – Present</small>
+                </div>
+              </div>
+              <div class="about-card reveal reveal--delay-3">
+                <div class="about-card__icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+                <div class="about-card__body">
+                  <h3>Location</h3>
+                  <p>Iten, Kenya 🇰🇪</p>
+                  <small>Available remote &amp; on-site globally</small>
+                </div>
+              </div>
+              <div class="about-card reveal reveal--delay-4">
+                <div class="about-card__icon"><i class="fas fa-handshake" aria-hidden="true"></i></div>
+                <div class="about-card__body">
+                  <h3>Availability</h3>
+                  <p>Open for Freelance</p>
+                  <small>&amp; Consulting Opportunities</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#contact" class="btn btn--primary">
+                <span>Let's Work Together</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/Tonnietoroo" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>GitHub Profile</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Sidebar -->
+          <aside class="about-sidebar reveal reveal--delay-2">
+            <div class="contact-card">
+              <h3>Quick Contact</h3>
+              <ul class="contact-list" aria-label="Contact information">
+                <li class="contact-list__item">
+                  <span class="contact-list__icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                  <div>
+                    <label>Email</label>
+                    <a href="mailto:tonnykip14@gmail.com">tonnykip14@gmail.com</a>
+                  </div>
+                </li>
+                <li class="contact-list__item">
+                  <span class="contact-list__icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                  <div>
+                    <label>Phone</label>
+                    <a href="tel:+254721473983">+254 721 473 983</a>
+                  </div>
+                </li>
+                <li class="contact-list__item">
+                  <span class="contact-list__icon"><i class="fas fa-map-location-dot" aria-hidden="true"></i></span>
+                  <div>
+                    <label>Location</label>
+                    <span>Iten, Kenya · GMT+3</span>
+                  </div>
+                </li>
+              </ul>
+              <a href="img/TonnyCV.pdf" class="btn btn--primary btn--full" download="Tonny_Kipchirchir_CV.pdf">
+                <i class="fas fa-download" aria-hidden="true"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <div class="social-card">
+              <h3>Connect</h3>
+              <div class="social-grid" role="list" aria-label="Social media links">
+                <a href="https://github.com/Tonnietoroo" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer" role="listitem"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://linkedin.com/in/tonnytoroitich" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" role="listitem"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/tonnytoroitich" class="social-link" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer" role="listitem"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://instagram.com/tonnytoroitich" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer" role="listitem"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SKILLS SECTION
+    ==================================================== -->
+    <section class="skills section section--alt" id="skills" role="region" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <div class="section-header section-header--center reveal">
+          <p class="section-label">Technical Expertise</p>
+          <h2 class="section-heading" id="skills-heading">My <em>Skill Set</em></h2>
+          <p class="section-sub">A battle-tested toolkit across the full product lifecycle — from pixel-perfect UIs to cloud infrastructure.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-cat reveal reveal--delay-1">
+            <div class="skill-cat__header">
+              <span class="skill-cat__icon"><i class="fas fa-code" aria-hidden="true"></i></span>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags" role="list" aria-label="Frontend skills">
+              <span class="skill-tag" role="listitem">HTML5</span>
+              <span class="skill-tag" role="listitem">CSS3 / Sass</span>
+              <span class="skill-tag" role="listitem">JavaScript ES6+</span>
+              <span class="skill-tag" role="listitem">TypeScript</span>
+              <span class="skill-tag" role="listitem">React.js</span>
+              <span class="skill-tag" role="listitem">Angular</span>
+              <span class="skill-tag" role="listitem">Bootstrap 5</span>
+              <span class="skill-tag" role="listitem">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal reveal--delay-2">
+            <div class="skill-cat__header">
+              <span class="skill-cat__icon"><i class="fas fa-server" aria-hidden="true"></i></span>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-tags" role="list" aria-label="Backend skills">
+              <span class="skill-tag" role="listitem">Python</span>
+              <span class="skill-tag" role="listitem">Django</span>
+              <span class="skill-tag" role="listitem">Django REST Framework</span>
+              <span class="skill-tag" role="listitem">Flask</span>
+              <span class="skill-tag" role="listitem">Node.js</span>
+              <span class="skill-tag" role="listitem">Express.js</span>
+              <span class="skill-tag" role="listitem">RESTful APIs</span>
+              <span class="skill-tag" role="listitem">Java</span>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal reveal--delay-3">
+            <div class="skill-cat__header">
+              <span class="skill-cat__icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></span>
+              <h3>Mobile</h3>
+            </div>
+            <div class="skill-tags" role="list" aria-label="Mobile development skills">
+              <span class="skill-tag" role="listitem">Flutter</span>
+              <span class="skill-tag" role="listitem">React Native</span>
+              <span class="skill-tag" role="listitem">Expo Router</span>
+              <span class="skill-tag" role="listitem">Android (Kotlin)</span>
+              <span class="skill-tag" role="listitem">Push Notifications</span>
+              <span class="skill-tag" role="listitem">App Store Deployment</span>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal reveal--delay-1">
+            <div class="skill-cat__header">
+              <span class="skill-cat__icon"><i class="fas fa-database" aria-hidden="true"></i></span>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-tags" role="list" aria-label="Database skills">
+              <span class="skill-tag" role="listitem">PostgreSQL</span>
+              <span class="skill-tag" role="listitem">MySQL</span>
+              <span class="skill-tag" role="listitem">SQLite</span>
+              <span class="skill-tag" role="listitem">Firebase</span>
+              <span class="skill-tag" role="listitem">Supabase</span>
+              <span class="skill-tag" role="listitem">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal reveal--delay-2">
+            <div class="skill-cat__header">
+              <span class="skill-cat__icon"><i class="fas fa-search" aria-hidden="true"></i></span>
+              <h3>SEO &amp; Digital</h3>
+            </div>
+            <div class="skill-tags" role="list" aria-label="SEO and digital marketing skills">
+              <span class="skill-tag" role="listitem">Technical SEO</span>
+              <span class="skill-tag" role="listitem">Keyword Research</span>
+              <span class="skill-tag" role="listitem">Google Analytics 4</span>
+              <span class="skill-tag" role="listitem">Search Console</span>
+              <span class="skill-tag" role="listitem">Schema Markup</span>
+              <span class="skill-tag" role="listitem">Core Web Vitals</span>
+              <span class="skill-tag" role="listitem">Local SEO</span>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal reveal--delay-3">
+            <div class="skill-cat__header">
+              <span class="skill-cat__icon"><i class="fas fa-cloud" aria-hidden="true"></i></span>
+              <h3>DevOps &amp; Cloud</h3>
+            </div>
+            <div class="skill-tags" role="list" aria-label="DevOps and cloud skills">
+              <span class="skill-tag" role="listitem">Docker</span>
+              <span class="skill-tag" role="listitem">Git / GitHub</span>
+              <span class="skill-tag" role="listitem">CI/CD Pipelines</span>
+              <span class="skill-tag" role="listitem">Heroku</span>
+              <span class="skill-tag" role="listitem">Vercel</span>
+              <span class="skill-tag" role="listitem">Netlify</span>
+              <span class="skill-tag" role="listitem">Linux / Bash</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         EXPERIENCE SECTION
+    ==================================================== -->
+    <section class="experience section" id="experience" role="region" aria-labelledby="exp-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <p class="section-label">Career Path</p>
+          <h2 class="section-heading" id="exp-heading">Professional <em>Experience</em></h2>
+          <p class="section-sub">A track record of delivering real-world impact across enterprise, government, and freelance engagements.</p>
+        </div>
+
+        <ol class="timeline" aria-label="Work experience timeline">
+
+          <li class="timeline-item timeline-item--current reveal reveal--delay-1">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="timeline-dot"></span>
+            </div>
+            <article class="timeline-card">
+              <header class="timeline-card__header">
+                <div class="timeline-card__meta">
+                  <span class="timeline-period"><i class="fas fa-calendar" aria-hidden="true"></i> May 2025 – Present</span>
+                  <span class="timeline-badge timeline-badge--current">Current</span>
+                </div>
+                <h3 class="timeline-card__title">Software Developer</h3>
+                <p class="timeline-card__company">Onfrey Limited</p>
+              </header>
+              <ul class="timeline-card__bullets">
+                <li>Leading full-stack development of enterprise web applications using React.js and Django REST Framework</li>
+                <li>Architecting scalable database schemas and optimizing PostgreSQL queries for high-traffic systems</li>
+                <li>Implementing CI/CD pipelines with Docker, ensuring reliable and automated deployments</li>
+                <li>Collaborating cross-functionally to deliver features aligned with business requirements</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal reveal--delay-2">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="timeline-dot"></span>
+            </div>
+            <article class="timeline-card">
+              <header class="timeline-card__header">
+                <div class="timeline-card__meta">
+                  <span class="timeline-period"><i class="fas fa-calendar" aria-hidden="true"></i> March – November 2024</span>
+                </div>
+                <h3 class="timeline-card__title">Freelance Software Developer</h3>
+                <p class="timeline-card__company">Self-Employed</p>
+              </header>
+              <ul class="timeline-card__bullets">
+                <li>Developed 10+ web and Android mobile applications for clients across East Africa</li>
+                <li>Conducted discovery sessions to translate business requirements into technical specifications</li>
+                <li>Designed system architectures, algorithms, and database schemas for bespoke solutions</li>
+                <li>Implemented QA processes, automated testing, and post-launch performance optimization</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal reveal--delay-3">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="timeline-dot"></span>
+            </div>
+            <article class="timeline-card">
+              <header class="timeline-card__header">
+                <div class="timeline-card__meta">
+                  <span class="timeline-period"><i class="fas fa-calendar" aria-hidden="true"></i> May – July 2024</span>
+                </div>
+                <h3 class="timeline-card__title">ICT &amp; Design Studio Intern</h3>
+                <p class="timeline-card__company">Rivatex East Africa Limited</p>
+              </header>
+              <ul class="timeline-card__bullets">
+                <li>Configured and maintained enterprise networking and IT infrastructure for daily operations</li>
+                <li>Developed internal web tools to streamline workflows across multiple departments</li>
+                <li>Reduced system downtime by implementing rapid-response troubleshooting protocols</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal reveal--delay-4">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="timeline-dot"></span>
+            </div>
+            <article class="timeline-card">
+              <header class="timeline-card__header">
+                <div class="timeline-card__meta">
+                  <span class="timeline-period"><i class="fas fa-calendar" aria-hidden="true"></i> May 2023</span>
+                </div>
+                <h3 class="timeline-card__title">Health IT — System Testing &amp; Data Entry</h3>
+                <p class="timeline-card__company">Kapkatet Level 5 Hospital · Ministry of Health Kenya</p>
+              </header>
+              <ul class="timeline-card__bullets">
+                <li>Selected by Ministry of Health Kenya for the national tiBERbu Healthcare System rollout</li>
+                <li>Configured software and ensured accurate data migration across multiple healthcare facilities</li>
+                <li>Trained clinical staff on the digital platform, significantly reducing adoption barriers</li>
+              </ul>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         PROJECTS SECTION
+    ==================================================== -->
+    <section class="projects section section--alt" id="projects" role="region" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="projects-header reveal">
+          <div>
+            <p class="section-label">Portfolio</p>
+            <h2 class="section-heading" id="projects-heading">Featured <em>Projects</em></h2>
+          </div>
+          <a href="https://github.com/Tonnietoroo" class="projects-all-link" target="_blank" rel="noopener noreferrer">
+            View all on GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal reveal--delay-1">
+            <div class="project-card__image">
+              <div class="project-card__img-bg project-card__img-bg--1" aria-hidden="true">
+                <i class="fas fa-radio"></i>
+              </div>
+              <span class="project-card__num">01</span>
+              <span class="project-card__category">Mobile App</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Radio47 — Kenyan Radio Streaming</h3>
+              <p class="project-card__desc">Feature-rich mobile streaming app with live audio, real-time community chat, weekly show schedules, and trending content detection. Built for the Kenyan market.</p>
+              <div class="project-card__tech" role="list" aria-label="Technologies used">
+                <span role="listitem">React Native</span>
+                <span role="listitem">Expo Router</span>
+                <span role="listitem">Supabase</span>
+                <span role="listitem">Edge Functions</span>
+                <span role="listitem">TypeScript</span>
+              </div>
+            </div>
+            <footer class="project-card__footer">
+              <a href="https://github.com/Tonnietoroo" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i> Source
+              </a>
+              <span class="project-card__result">Live Streaming · Chat · Analytics</span>
+            </footer>
+          </article>
+
+          <article class="project-card reveal reveal--delay-2">
+            <div class="project-card__image">
+              <div class="project-card__img-bg project-card__img-bg--2" aria-hidden="true">
+                <i class="fas fa-cash-register"></i>
+              </div>
+              <span class="project-card__num">02</span>
+              <span class="project-card__category">Enterprise Software</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Garisoul — Automotive POS System</h3>
+              <p class="project-card__desc">Cutting-edge Point-of-Sale platform for automotive retail and service businesses. Streamlines sales, inventory tracking, and customer relationships with real-time analytics.</p>
+              <div class="project-card__tech" role="list" aria-label="Technologies used">
+                <span role="listitem">Full Stack</span>
+                <span role="listitem">Real-time Data</span>
+                <span role="listitem">Payment APIs</span>
+                <span role="listitem">Inventory Mgmt</span>
+              </div>
+            </div>
+            <footer class="project-card__footer">
+              <a href="https://github.com/Tonnietoroo" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i> Source
+              </a>
+              <span class="project-card__result">POS · Inventory · Analytics</span>
+            </footer>
+          </article>
+
+          <article class="project-card reveal reveal--delay-3">
+            <div class="project-card__image">
+              <div class="project-card__img-bg project-card__img-bg--3" aria-hidden="true">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <span class="project-card__num">03</span>
+              <span class="project-card__category">Digital Strategy</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">SEO &amp; Digital Growth Campaigns</h3>
+              <p class="project-card__desc">End-to-end SEO strategy and digital marketing for multiple businesses — technical audits, schema implementation, Google Business optimization, and content strategy.</p>
+              <div class="project-card__tech" role="list" aria-label="Technologies used">
+                <span role="listitem">SEO Strategy</span>
+                <span role="listitem">Google Business</span>
+                <span role="listitem">Schema Markup</span>
+                <span role="listitem">Core Web Vitals</span>
+              </div>
+            </div>
+            <footer class="project-card__footer">
+              <a href="#contact" class="project-link">
+                <i class="fas fa-envelope" aria-hidden="true"></i> Inquire
+              </a>
+              <span class="project-card__result project-card__result--green">+200% Organic Traffic</span>
+            </footer>
+          </article>
+
+          <article class="project-card reveal reveal--delay-1">
+            <div class="project-card__image">
+              <div class="project-card__img-bg project-card__img-bg--4" aria-hidden="true">
+                <i class="fas fa-hospital"></i>
+              </div>
+              <span class="project-card__num">04</span>
+              <span class="project-card__category">Health Informatics</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">tiBERbu Healthcare System Implementation</h3>
+              <p class="project-card__desc">National rollout of the Ministry of Health Kenya's tiBERbu system. System configuration, data migration, staff training, and QA across multiple facilities.</p>
+              <div class="project-card__tech" role="list" aria-label="Technologies used">
+                <span role="listitem">Health IT</span>
+                <span role="listitem">Data Migration</span>
+                <span role="listitem">System Testing</span>
+                <span role="listitem">Staff Training</span>
+              </div>
+            </div>
+            <footer class="project-card__footer">
+              <a href="#contact" class="project-link">
+                <i class="fas fa-info-circle" aria-hidden="true"></i> Details
+              </a>
+              <span class="project-card__result">Government · Healthcare</span>
+            </footer>
+          </article>
+
+          <article class="project-card reveal reveal--delay-2">
+            <div class="project-card__image">
+              <div class="project-card__img-bg project-card__img-bg--5" aria-hidden="true">
+                <i class="fas fa-mobile-screen-button"></i>
+              </div>
+              <span class="project-card__num">05</span>
+              <span class="project-card__category">Mobile Development</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Cross-Platform SME Business Apps</h3>
+              <p class="project-card__desc">Suite of Flutter and React Native applications for East African SMEs — e-commerce, inventory management, booking systems, and field service tools with offline-first architecture.</p>
+              <div class="project-card__tech" role="list" aria-label="Technologies used">
+                <span role="listitem">Flutter</span>
+                <span role="listitem">React Native</span>
+                <span role="listitem">Firebase</span>
+                <span role="listitem">Offline-first</span>
+              </div>
+            </div>
+            <footer class="project-card__footer">
+              <a href="https://github.com/Tonnietoroo" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i> Source
+              </a>
+              <span class="project-card__result">iOS · Android · Web</span>
+            </footer>
+          </article>
+
+          <article class="project-card reveal reveal--delay-3">
+            <div class="project-card__image">
+              <div class="project-card__img-bg project-card__img-bg--6" aria-hidden="true">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <span class="project-card__num">06</span>
+              <span class="project-card__category">IT Infrastructure</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Rivatex Enterprise IT Overhaul</h3>
+              <p class="project-card__desc">Complete IT infrastructure modernization — network configuration, internal web tool development, system analysis, and cross-departmental technical support significantly reducing downtime.</p>
+              <div class="project-card__tech" role="list" aria-label="Technologies used">
+                <span role="listitem">Networking</span>
+                <span role="listitem">System Admin</span>
+                <span role="listitem">Web Dev</span>
+                <span role="listitem">IT Support</span>
+              </div>
+            </div>
+            <footer class="project-card__footer">
+              <a href="#contact" class="project-link">
+                <i class="fas fa-info-circle" aria-hidden="true"></i> Details
+              </a>
+              <span class="project-card__result">Enterprise · Infrastructure</span>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SERVICES SECTION
+    ==================================================== -->
+    <section class="services section" id="services" role="region" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="section-header section-header--center reveal">
+          <p class="section-label">What I Offer</p>
+          <h2 class="section-heading" id="services-heading">Services I <em>Provide</em></h2>
+          <p class="section-sub">Premium digital services designed to solve real business challenges and deliver measurable, lasting outcomes.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card reveal reveal--delay-1">
+            <div class="service-card__icon"><i class="fas fa-globe" aria-hidden="true"></i></div>
+            <h3>Full Stack Web Development</h3>
+            <p>End-to-end web applications with React, Django, and Node.js — responsive, performant, and built to scale. From MVPs to enterprise platforms.</p>
+          </div>
+
+          <div class="service-card reveal reveal--delay-2">
+            <div class="service-card__icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></div>
+            <h3>Mobile App Development</h3>
+            <p>Cross-platform iOS and Android apps with Flutter and React Native. Native performance, beautiful UI, and seamless user experiences.</p>
+          </div>
+
+          <div class="service-card reveal reveal--delay-3">
+            <div class="service-card__icon"><i class="fas fa-search" aria-hidden="true"></i></div>
+            <h3>SEO &amp; Digital Marketing</h3>
+            <p>Technical SEO audits, keyword strategy, Google Business Profile optimization, and schema markup to drive organic traffic and visibility.</p>
+          </div>
+
+          <div class="service-card reveal reveal--delay-1">
+            <div class="service-card__icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+            <h3>Performance Optimization</h3>
+            <p>Core Web Vitals improvement, Lighthouse scoring, code splitting, and lazy loading to make your digital products blazing fast.</p>
+          </div>
+
+          <div class="service-card reveal reveal--delay-2">
+            <div class="service-card__icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+            <h3>System Architecture &amp; APIs</h3>
+            <p>Scalable system design, RESTful API architecture, database modeling, and cloud infrastructure planning for future-proof applications.</p>
+          </div>
+
+          <div class="service-card reveal reveal--delay-3">
+            <div class="service-card__icon"><i class="fas fa-handshake" aria-hidden="true"></i></div>
+            <h3>Technology Consulting</h3>
+            <p>Strategic digital transformation advice, tech stack selection, team mentoring, and bespoke solutions for businesses ready to evolve.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         CONTACT SECTION
+    ==================================================== -->
+    <section class="contact section section--alt" id="contact" role="region" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <!-- Left: Info -->
+          <div class="contact-info">
+            <div class="reveal">
+              <p class="section-label">Get In Touch</p>
+              <h2 class="section-heading" id="contact-heading">Let's build something <em>great</em> together</h2>
+              <p class="section-sub">I'm open to new projects, collaborations, and interesting challenges. I respond within 24 hours.</p>
+            </div>
+
+            <ul class="contact-methods reveal reveal--delay-1" aria-label="Contact methods">
+              <li>
+                <a href="mailto:tonnykip14@gmail.com" class="contact-method">
+                  <span class="contact-method__icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                  <div>
+                    <label>Email</label>
+                    <span>tonnykip14@gmail.com</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+254721473983" class="contact-method">
+                  <span class="contact-method__icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                  <div>
+                    <label>Phone / WhatsApp</label>
+                    <span>+254 721 473 983</span>
+                  </div>
+                </a>
+              </li>
+              <li class="contact-method">
+                <span class="contact-method__icon"><i class="fas fa-map-location-dot" aria-hidden="true"></i></span>
+                <div>
+                  <label>Location</label>
+                  <span>Iten, Kenya · Available Globally</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact-socials reveal reveal--delay-2" role="list" aria-label="Social profiles">
+              <a href="https://github.com/Tonnietoroo" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer" role="listitem"><i class="fab fa-github" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/in/tonnytoroitich" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" role="listitem"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/tonnytoroitich" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer" role="listitem"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://instagram.com/tonnytoroitich" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer" role="listitem"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-form-wrap reveal reveal--delay-2">
+            <h3 class="form-heading">Send a Message</h3>
+            <form id="contactForm" class="contact-form" method="POST" action="https://formspree.io/f/xnqepjpg" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" required aria-required="true" placeholder="John Doe" autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" required aria-required="true" placeholder="john@example.com" autocomplete="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject <span aria-hidden="true">*</span></label>
+                <input type="text" id="subject" name="subject" required aria-required="true" placeholder="Project Inquiry">
+              </div>
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Tell me about your project..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane btn-icon" aria-hidden="true"></i>
+              </button>
+              <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Tonny Toroitich" class="footer-logo-img">
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Tonny Kipchirchir Toroitich. Crafted with <span class="heart" aria-label="love">❤️</span> in Kenya
+      </p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <!--------main content end----------->
-</div>
-<!--------Main container end.--------->
+  </footer>
 
-<!--------------Style Switcher START-------------->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
-        <i class="fas fa-cog fa-spin"></i>
-    </div>
-    <div class="day-night s-icon">
-        <i class="fas"></i>
-    </div>
-    <h4>Theme Colors</h4>
-    <div class="colors">
-        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-    </div>
-</div>
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
-<!--------------Style Switcher END -------------->
-
-
-<!--------Js Files---------->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="kevo.js"></script>
-<script src="switcher.js"></script>
-
+  <!-- Scripts -->
+  <script src="kevo.js"></script>
 </body>
 </html>
